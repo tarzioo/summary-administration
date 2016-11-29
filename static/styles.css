@@ -2,3 +2,11 @@
     height: 20%;
     background-color: rgba(0, 0, 0, 0.10);
 }
+
+
+.logo img{
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+
+}
