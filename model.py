@@ -11,6 +11,30 @@ import datetime
 db = SQLAlchemy()
 
 
+######################################################
+# Model Definitions
+
+
+class Probate(db.Model):
+    """Details of probate being filed"""
+
+
+    __tablename__ = "probate"
+
+    probate_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    firstname = db.Column(db.String(50), nullable=False)
+    lastname = db.Column(db.String(50), nullable=False)
+    case_number = db.Column(db.String(20), nullable=False)
+    date_filed = db.Column(db.String(50), nullable=False)
+
+
+    @staticmethod
+    def add_probate(firstname, lastname, case_number, date_filed):
+        """Add a new probate"""
+
+        
+
+
 
 
 def connect_to_db(app):
