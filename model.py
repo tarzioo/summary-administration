@@ -32,7 +32,15 @@ class Probate(db.Model):
     def add_probate(firstname, lastname, case_number, date_filed):
         """Add a new probate"""
 
-        
+
+        probate = Probate(firstname=firstname, lastname=lastname, case_number=case_number, date_filed=date_filed)
+
+        db.session.add(probate)
+        db.session.commit()
+
+        return probate
+
+
 
 
 
