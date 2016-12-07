@@ -24,7 +24,7 @@ app.jinja_env.undefined = StrictUndefined
 def index():
     """homepage"""
 
-    return render_template("base.html")
+    return render_template("homepage.html")
 
 
 @app.route("/add-probate", methods=["POST"])
@@ -46,6 +46,13 @@ def add_probate():
 
     return "Probate case added"
     
+
+@app.route("/add-case")
+def add_case():
+    """add case"""
+
+
+    return render_template('add-case.html')
 
 
 

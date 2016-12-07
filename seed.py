@@ -22,5 +22,3 @@ if __name__ == "__main__":
 
     #create location table
     db.create_all()
-
-    load_location_data()
