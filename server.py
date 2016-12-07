@@ -55,6 +55,13 @@ def add_case():
     return render_template('add-case.html')
 
 
+@app.route("/probate-progress")
+def probate_progress():
+    """Show progress of probate"""
+
+    return render_template("probate-progress.html")
+
+
 
 
 
