@@ -1,6 +1,7 @@
 h1 {
     color: black;
-    
+    text-align: center;
+
 }
 
 .nav-bar {
@@ -15,3 +16,29 @@ h1 {
     display: block;
 
 }
+
+.probate-form {
+    background: rgba(40, 10, 255, 0.25);
+    height: 120%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.add-btn {
+    position: absolute;
+    left: 45%;
+    margin-top: 1%;
+}
+
+.probate-add-form {
+    margin: 0 auto;
+}
+
+.add-case-form {
+    text-align: center;
+}
+
+/*input {
+    position: absolute;
+    right: 30%;
+}*/

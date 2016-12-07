@@ -3,8 +3,38 @@
 {% block content %}
 
 
-    <h1>Add a New Probate Case</h1>
+<div class="probate-form">
+<h1>Add a probate case</h1>
+
+
+
+<form action='/add-probate' id="probate-add-form" method="POST">
+    <div class="add-case-form">
+        <label>First Name of Decendent:
+            <input type="text" id="firstname" placeholder="First Name" name="firstname_of_decendent"></input></label><br>
+            <div id="error-firstname"></div>
+        <label>Last Name of Decedent:
+            <input type="text" id="lastname" placeholder="Last Name" name="lastname_of-decendent"></input></label><br>
+            <div id="error-lastname"></div>   
+        <label>Case Number:
+            <input type="text" placeholder="Case Number" id="case-number" name="case_number"></input></label><br>
+            <div id="error-case-number"></div>
+        <label>Date filed:
+            <input type="text" placeholder="Date Filed" id="date-filed" name="date_filed"></input></label><br>
+            <div id="error-date_filed"></div>
+        <label>Date of Death:
+            <input type="text" placeholder="Date of Death" id="date-of-death" name="date_of_death"></input></label><br>
+            <div id="date_of_death"></div>
+        <label>Court Date:
+            <input type="text" placeholder="Court Date" id="court-date" name="court_date"></input></label><br>
+            <div id="error-court-date"></div>
+        <label>Order Admitting Date:
+            <input type="text" placeholder="Order Admitting Date" id="order-admitting-date" name="order_admitting_date"></input></label><br>
+            <div id="error-order-admitting-date"></div>
+    </div>
+    <input class="add-btn" id="case-add-btn" type="submit" value="Add Probate Case">
+</form>
+
+</div>
 
 {% endblock %}
-
- <h1>Add a New Probate Case</h1>
