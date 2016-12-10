@@ -17,23 +17,6 @@ h1 {
 
 }
 
-/****************** ADD A CASE *************************/
-
-.probate-add-form {
-    margin: 0 auto;
-    display: inline-block;
-
-}
-
-.add-case-form {
-    text-align: center;
-}
-
-.add-case-field {
-    display: inline-block;
-    color: red;
-    margin: 0 auto;
-}
 
 
 /***************** PROBATE FORM ************/
@@ -179,14 +162,45 @@ input.active:after {
 
 /********************* CALENDAR *********************/
 
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+.calendar-outer {
+    font-family: 'Open Sans Condensed', arial, sans;
+    padding: 30px;
+    margin: 50px auto;
+    position: relative;
+    height: 90%;
+    width: 50%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
 
+}
+
+.calendar-outer h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 26px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+    text-align: center;
+}
+
+.calendar-inner {
+    height: 100%;
+    width: 100%;
+}
 /* Month header */
 .month {
-    padding: 70px 25px;
-    width: 100%;
+    width: 90%;
+    height: 20%;
     background: #1abc9c;
+    position: relative;
+    /*right: 5%;
+    bottom: 6%;*/
 }
 
 /* Month list */
@@ -252,14 +266,34 @@ body {font-family: Verdana, sans-serif;}
     color: white !important
 }
 
-/**************** END OF CALENDAR ***************/
+/**************** PROBATE PROGRESS ***************/
 
 
 
-.probate-progress-container {
+.probate-progress-outer {
+    font-family: 'Open Sans Condensed', arial, sans;
+    padding: 30px;
+    margin: 50px auto;
     background: rgba(8, 149, 196, 0.75);
     position: relative;
-    height: 50%;
-    width: 60%;
+    height: 90%;
+    width: 50%;
     margin: 0 auto;
+    /*overflow: hidden;*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+
+.probate-progress-outer h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 26px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+    text-align: center;
 }
