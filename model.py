@@ -22,8 +22,7 @@ class Probate(db.Model):
     __tablename__ = "probate"
 
     probate_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    firstname_of_decendent = db.Column(db.String(50), nullable=False)
-    lastname_of_decedent = db.Column(db.String(50), nullable=False)
+    fullname_of_decendent = db.Column(db.String(75), nullable=False)
     case_number = db.Column(db.String(20), nullable=False)
     date_filed = db.Column(db.String(50), nullable=False)
     date_of_death = db.Column(db.String(50), nullable=False)
@@ -32,11 +31,11 @@ class Probate(db.Model):
 
 
     @staticmethod
-    def add_probate(firstname_of_decendent, lastname_of_decedent, case_number, date_filed, date_of_death, court_date, order_admitting_date):
+    def add_probate(fullname_of_decendent, case_number, date_filed, date_of_death, court_date, order_admitting_date):
         """Add a new probate"""
 
 
-        probate = Probate(firstname_of_decendent=firstname_of_decendent, lastname_of_decedent=lastname_of_decedent, case_number=case_number, date_filed=date_filed, date_of_death=date_of_death, court_date=court_date, order_admitting_date=order_admitting_date)
+        probate = Probate(fullname_of_decendent=fullname_of_decendent, case_number=case_number, date_filed=date_filed, date_of_death=date_of_death, court_date=court_date, order_admitting_date=order_admitting_date)
 
         db.session.add(probate)
         db.session.commit()
@@ -68,7 +67,7 @@ class Probate(db.Model):
         """Provide helpful representation when printed"""
 
 
-        return "<Probate probate_id=%s firstname_of_decendent=%s lastname_of_decedent=%s case_number=%s date_filed=%s date_of_death=%s court_date=%s order_admitting_date=%s>" % (self.probate_id, self.firstname_of_decendent, self.lastname_of_decedent, self.case_number, self.date_filed, self.date_of_death, self.court_date, self.order_admitting_date)
+        return "<Probate probate_id=%s fullname_of_decendent=%s case_number=%s date_filed=%s date_of_death=%s court_date=%s order_admitting_date=%s>" % (self.probate_id, self.fullname_of_decendent, self.case_number, self.date_filed, self.date_of_death, self.court_date, self.order_admitting_date)
 
 
 

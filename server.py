@@ -32,15 +32,14 @@ def add_probate():
     """add new probate case"""
 
 
-    firstname_of_decendent = request.form.get('firstname_of_decendent')
-    lastname_of_decedent = request.form.get('lastname_of_decedent')
+    fullname_of_decendent = request.form.get('fullname_of_decendent')
     case_number = request.form.get('case_number')
     date_filed = request.form.get('date_filed')
     date_of_death = request.get('date_of_death')
     court_date = request.form.get('court_date')
     order_admitting_date = request.form.get('order_admitting_date')
 
-    Probate.add_probate(firstname_of_decendent, lastname_of_decedent, case_number,
+    Probate.add_probate(fullname_of_decendent, case_number,
         date_filed, date_of_death, court_date, order_admitting_date)
 
 
