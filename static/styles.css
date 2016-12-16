@@ -301,7 +301,6 @@ input.active:after {
 }
 
 
-
 .progress-container {
     background-color: gray;
     height: 20%;
@@ -309,6 +308,80 @@ input.active:after {
     margin: auto;
     position: absolute;
     border-radius: 25px;
+    padding: 10px;
+
+    /*background-color: gray;
+    height: 60px;
+    width: 530px;
+    margin: auto;
+    position: absolute;
+    border-radius: 25px;
+    padding: 10px;*/
+
+}
+
+.date-filed-progress {
+    background-color: gray;
+    border: black 1px solid;
+    height: 100%;
+    width: 16%;
+    border-radius: 25px 0 0 25px;
     padding: 20px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+.order-admitted-progress {
+    background-color: gray;
+    border: black 1px solid;
+    height: 100%;
+    width: 16%;
+    padding: 20px;
+    margin-bottom: 35px;
+    display: inline-block;
+
+}
+
+.first-10-progress {
+    background-color: gray;
+    border: black 1px solid;
+    height: 100%;
+    width: 16%;
+    padding: 20px;
+    margin-bottom: 35px;
+    display: inline-block;
+
+}
+.second-10-progress {
+    background-color: gray;
+    border: black 1px solid;
+    height: 100%;
+    width: 16%;
+    padding: 20px;
+    margin-bottom: 35px;
+    display: inline-block;
+
+}
+
+.thirty-day-progress {
+    background-color: gray;
+    border: black 1px solid;
+    height: 100%;
+    width: 16%;
+    padding: 20px;
+    margin-bottom: 35px;
+    display: inline-block;
+
+}
+
+.fourtyfive-day-progress {
+    background-color: gray;
+    border: black 1px solid;
+    height: 100%;
+    width: 16%;
+    border-radius: 0 25px 25px 0;
+    padding: 20px;
+    margin-bottom: 35px;
+    display: inline-block;
 
 }
