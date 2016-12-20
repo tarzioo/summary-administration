@@ -309,6 +309,7 @@ input.active:after {
     position: absolute;
     border-radius: 25px;
     padding: 10px;
+    margin-top: 20px;
 
     /*background-color: gray;
     height: 60px;
@@ -321,67 +322,79 @@ input.active:after {
 }
 
 .date-filed-progress {
-    background-color: gray;
-    border: black 1px solid;
-    height: 100%;
-    width: 16%;
     border-radius: 25px 0 0 25px;
-    padding: 20px;
-    margin-bottom: 35px;
-    display: inline-block;
+
 }
 
 .order-admitted-progress {
-    background-color: gray;
-    border: black 1px solid;
-    height: 100%;
-    width: 16%;
-    padding: 20px;
-    margin-bottom: 35px;
-    display: inline-block;
+
 
 }
 
 .first-10-progress {
-    background-color: gray;
-    border: black 1px solid;
-    height: 100%;
-    width: 16%;
-    padding: 20px;
-    margin-bottom: 35px;
-    display: inline-block;
+
 
 }
 .second-10-progress {
-    background-color: gray;
-    border: black 1px solid;
-    height: 100%;
-    width: 16%;
-    padding: 20px;
-    margin-bottom: 35px;
-    display: inline-block;
+    
 
 }
 
 .thirty-day-progress {
-    background-color: gray;
-    border: black 1px solid;
-    height: 100%;
-    width: 16%;
-    padding: 20px;
-    margin-bottom: 35px;
-    display: inline-block;
+   
 
 }
 
 .fourtyfive-day-progress {
-    background-color: gray;
+    border-radius: 0 25px 25px 0;
+
+}
+
+.progress-bar {
+    margin-left: 3px;
     border: black 1px solid;
     height: 100%;
     width: 16%;
-    border-radius: 0 25px 25px 0;
     padding: 20px;
     margin-bottom: 35px;
     display: inline-block;
+    background-color: lightgray;
+}
 
+.progress-inprogress {
+    background-color: orange;
+}
+
+.progress-complete {
+    background-color: green;
+}
+
+.progress-past-deadline {
+    background-color: red;
+}
+
+.progress-definition {
+    margin: 0 10px 0 10px;
+    background-color: gray;
+    height: 20%;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.progress-definition li{
+    display: inline;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p {
+margin: -40px 15px;
 }
