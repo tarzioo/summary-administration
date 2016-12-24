@@ -26,6 +26,12 @@ def index():
 
     return render_template("homepage.html")
 
+@app.route('/login')
+def login():
+    """Login Page"""
+
+    return render_template("login.html")
+
 
 @app.route("/add-probate", methods=["POST"])
 def add_probate():
