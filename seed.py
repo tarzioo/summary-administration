@@ -1,8 +1,7 @@
 import json
 
 from sqlalchemy import func
-from model import Location
-from model import User
+
 
 from model import connect_to_db, db
 from server import app

@@ -41,15 +41,17 @@ def add_probate():
     fullname_of_decendent = request.form.get('fullname_of_decendent')
     case_number = request.form.get('case_number')
     date_filed = request.form.get('date_filed')
-    date_of_death = request.get('date_of_death')
+    date_of_death = request.form.get('date_of_death')
     court_date = request.form.get('court_date')
     order_admitting_date = request.form.get('order_admitting_date')
 
     Probate.add_probate(fullname_of_decendent, case_number,
         date_filed, date_of_death, court_date, order_admitting_date)
 
+    result = Probate.get_case_by_number(case_number)
 
-    return "Probate case added"
+
+    return redirect('/probate-progress')
     
 
 @app.route("/add-case")
