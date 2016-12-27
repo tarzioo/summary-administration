@@ -47,6 +47,7 @@ class Probate(db.Model):
         """Get existing case by case number"""
 
 
+        print "entered get case by number function"
         probate = Probate.query.filter_by(case_number=case_number).first()
 
         return probate
