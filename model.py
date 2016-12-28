@@ -49,6 +49,7 @@ class Probate(db.Model):
 
         print "entered get case by number function"
         probate = Probate.query.filter_by(case_number=case_number).first()
+        print "probate in model file is", probate
 
         return probate
 

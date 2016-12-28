@@ -65,11 +65,13 @@ def add_case():
 @app.route("/case-search", methods=["POST"])
 def search_for_a_case():
     """Search for a case by case number"""
-
+    print "**************************"
     print "entered case search route"
     case_number = request.form.get("case_number")
+    print "received from search field", case_number
 
     probate = Probate.get_case_by_number(case_number)
+    print "Case Number is", case_number
 
     probate_json = {
                     'fullname_of_decendent': probate.fullname_of_decendent,
