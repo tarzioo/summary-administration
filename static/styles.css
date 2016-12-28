@@ -103,13 +103,13 @@ h1 {
 
 input[type='date']:after {
   content: attr(placeholder);
-  left: 50%;
+  /*left: 50%;*/
   color: #909;;
 }
 
 input[type='text']:before {
   content: attr(placeholder);
-  left: 50%;
+  /*left: 50%;*/
   color: black;
 }
 
@@ -134,7 +134,7 @@ input[type='text']:before {
 .placeholder::after
 {
     position: absolute;
-    left: -50px;
+   /* left: -50px;*/
     top: 3px;
     content: attr(placeholder);
     pointer-events: none;
@@ -144,7 +144,7 @@ input[type='text']:before {
 .test::after
 {
     position: absolute;
-    left: 40px;
+    /*left: 40px;*/
     top: 5px;
     content: attr(placeholder);
     pointer-events: none;
@@ -153,7 +153,7 @@ input[type='text']:before {
 }
 
 input.active:after {
-  left: -2.8em;
+ /* left: -2.8em;*/
   color: #888;
   content: attr(data-placeholder);
 
