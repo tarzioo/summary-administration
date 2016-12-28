@@ -24,9 +24,9 @@ class Probate(db.Model):
     probate_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     fullname_of_decendent = db.Column(db.String(75), nullable=False)
     case_number = db.Column(db.String(20), nullable=False)
-    date_filed = db.Column(db.String(50), nullable=False)
+    date_filed = db.Column(db.String(50), nullable=True)
     date_of_death = db.Column(db.String(50), nullable=False)
-    court_date = db.Column(db.String(50), nullable=False)
+    court_date = db.Column(db.String(50), nullable=True)
     order_admitting_date = db.Column(db.String(50), nullable=True)
 
 
