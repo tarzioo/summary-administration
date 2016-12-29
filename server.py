@@ -73,6 +73,16 @@ def search_for_a_case():
     probate = Probate.get_case_by_number(case_number)
     print "Case Number is", case_number
 
+
+    #Since date_filed, court_date, and order_admitting date can be set as null, we use '- - -' as a place filler until it is given a date
+    
+    if not probate.date_filed:
+        probate.date_filed = "- - -"
+    if not probate.court_date:
+        probate.court_date = "- - -"
+    if not probate.order_admitting_date:
+        probate.order_admitting_date = "- - -"
+
     probate_json = {
                     'fullname_of_decendent': probate.fullname_of_decendent,
                     'case_number': probate.case_number,
