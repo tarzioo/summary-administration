@@ -41,7 +41,7 @@ class User(db.Model):
         """Provide helpful representation when printed"""
 
 
-        return "<User user_id=%s username=%s >" % (self.username)
+        return "<User user_id=%s username=%s >" % (self.user_id, self.username)
 
 
 
