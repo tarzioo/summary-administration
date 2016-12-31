@@ -65,6 +65,8 @@ def add_case():
 @app.route("/case-search", methods=["POST"])
 def search_for_a_case():
     """Search for a case by case number"""
+
+
     print "**************************"
     print "entered case search route"
     case_number = request.form.get("case_number")
@@ -95,13 +97,26 @@ def search_for_a_case():
 
     pprint(probate_json)
 
-    return redirect('/probate-progress')
+    probate_id = str(probate.probate_id)
 
-@app.route("/probate-progress")
-def probate_progress():
+    return redirect('/probate-progress/' + probate_id)
+
+@app.route("/probate-progress/<probate_id>")
+def probate_progress(probate_id):
     """Show progress of probate"""
 
-    return render_template("probate-progress.html")
+    probate = Probate.get_by_probate_id(int(probate_id))
+
+    if not probate.date_filed:
+        probate.date_filed = "- - -"
+    if not probate.court_date:
+        probate.court_date = "- - -"
+    if not probate.order_admitting_date:
+        probate.order_admitting_date = "- - -"
+
+    print "recevied get by probate", probate
+
+    return render_template("probate-progress.html", probate=probate)
 
 
 
