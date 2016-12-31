@@ -75,7 +75,7 @@ def search_for_a_case():
 
 
     #Since date_filed, court_date, and order_admitting date can be set as null, we use '- - -' as a place filler until it is given a date
-    
+
     if not probate.date_filed:
         probate.date_filed = "- - -"
     if not probate.court_date:
@@ -84,6 +84,7 @@ def search_for_a_case():
         probate.order_admitting_date = "- - -"
 
     probate_json = {
+                    'Probate_id': probate.probate_id,
                     'fullname_of_decendent': probate.fullname_of_decendent,
                     'case_number': probate.case_number,
                     'date_filed': probate.date_filed,

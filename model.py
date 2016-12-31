@@ -14,6 +14,39 @@ db = SQLAlchemy()
 ######################################################
 # Model Definitions
 
+class User(db.Model):
+    """Details of lawfirm's login for probate app"""
+
+
+    __tablename__ = "user"
+
+    user_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    username = db.Column(db.String(50), nullable=False)
+    password = db.Column(db.String(50), nullable=False)
+
+    
+    @staticmethod
+    def add_user(username, password):
+        """Add new user"""
+
+
+        user = User(username=username, password=password)
+
+        db.session.add(user)
+        db.session.commit()
+        return user
+
+
+    def __repr__(self):
+        """Provide helpful representation when printed"""
+
+
+        return "<User user_id=%s username=%s >" % (self.username)
+
+
+
+
+
 
 class Probate(db.Model):
     """Details of probate being filed"""
@@ -52,6 +85,17 @@ class Probate(db.Model):
         print "probate in model file is", probate
 
         return probate
+
+    @staticmethod
+    def get_by_probate_id(probate_id):
+        """get existing probate by probate id"""
+
+
+        probate = Probate.query.filter_by(probate_id=probate_id).first()
+
+
+        return probate
+
 
     @staticmethod
     def update_order_admitting_date(case_number, order_admitting_date):
