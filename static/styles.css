@@ -356,7 +356,8 @@ input.active:after {
 }
 
 .progress-bar {
-    margin-left: 3px;
+   /* margin-left: 4px;*/
+    margin: 0 4px 0 4px;
     border: black 1px solid;
     height: 100%;
     width: 16%;
