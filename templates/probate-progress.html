@@ -5,17 +5,41 @@
 <div class="probate-progress-outer">
     <h2>Probate Progress</h2>
     <div class="progress-container">
-        <div class="date-filed-progress progress-bar progress-complete">Date Filed
+        <div class="date-filed-progress progress-bar progress-complete">
+            <div class="content-in-progress">
+                <h5>Date Filed</h5>
+                <p>{{ probate.date_filed }}</p>
+            </div>
         </div>
-        <div class="order-admitted-progress progress-bar progress-inprogress">Order Admitting Date
+        <div class="order-admitted-progress progress-bar progress-inprogress">
+            <div class="content-in-progress">
+                <h5>Order Admitting Date</h5>
+                <p>{{ probate.order_admitting_date }}</p>
+            </div>
         </div>
-        <div class="first-10-progress progress-bar progress-past-deadline">1st 10 days
+        <div class="first-10-progress progress-bar progress-past-deadline">
+            <div class="content-in-progress">
+                <h5>1st 10 days</h5>
+                <p>{{ probate.order_admitting_date }} CALCULATE DIFFERENCE</p>
+            </div>
         </div>
-        <div class="second-10-progress progress-bar">2nd 10 Days
+        <div class="second-10-progress progress-bar">
+            <div class="content-in-progress">
+                <h5>2nd 10 days</h5>
+                <p>{{ probate.order_admitting_date }} CALCULATE DIFFERENCE</p>
+            </div>
         </div>
-        <div class="thirty-day-progress progress-bar">30 Days
+        <div class="thirty-day-progress progress-bar">
+            <div class="content-in-progress">
+                <h5>30 days</h5>
+                <p>{{ probate.order_admitting_date }} CALCULATE DIFFERENCE</p>
+            </div>
         </div>
-        <div class="fourtyfive-day-progress progress-bar">45 Days
+        <div class="fourtyfive-day-progress progress-bar">
+            <div class="content-in-progress">
+                <h5>45 days</h5>
+                <p>{{ probate.order_admitting_date }} CALCULATE DIFFERENCE</p>
+            </div>
         </div>
     </div>
 
