@@ -359,7 +359,7 @@ input.active:after {
     margin-left: 3px;
     border: black 1px solid;
     height: 100%;
-    width: 16.25%;
+    width: 16%;
     padding: 20px;
     margin-bottom: 35px;
     display: inline-block;
@@ -390,6 +390,12 @@ margin: -40px 15px;
 
 h5 {
     margin-top: 10px;
+}
+
+.display-case-number {
+    text-align: center;
+    font-size: 50px;
+    color: white;
 }
 
 
