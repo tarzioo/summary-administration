@@ -118,6 +118,14 @@ def probate_progress(probate_id):
 
     return render_template("probate-progress.html", probate=probate)
 
+@app.route('/schedule-planner')
+def schedule_planner():
+    """Show current day to help plan possible court dates 30 and 45 days out"""
+
+
+    time = datetime.datetime.utcnow()
+
+    return render_template("schedule-planner.html", time=time)
 
 
 
