@@ -139,8 +139,31 @@ class Probate(db.Model):
 #         """Provide helpful representation when printed"""
 
 
-#         return "<User timeline_id=%s first_10_days=%s second_10_days=%s  thirty_days=%s>" % (self.user_id, self.first_10_days, self.second_10_days, self.thirty_days)
+#         return "<Timeline timeline_id=%s first_10_days=%s second_10_days=%s  thirty_days=%s>" % (self.user_id, self.first_10_days, self.second_10_days, self.thirty_days)
 
+class Planner(db.Model):
+    """details of current day to help schedule a court date 30 and 45 days out"""
+
+
+     __tablename__ = "planners"
+
+    planner_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    time = db.Column(db.DateTime, default=datetime.datetime.utcnow())
+
+
+
+    @staticmethod
+    def get_current_time():
+
+
+        return
+
+
+    def __repr__(self):
+        """Provide helpful representation when printed"""
+
+
+        return "<Planner planner_id=%s time=%s >" % (self.planner_id, self.time)
 
 
 
