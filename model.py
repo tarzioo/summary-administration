@@ -18,7 +18,7 @@ class User(db.Model):
     """Details of lawfirm's login for probate app"""
 
 
-    __tablename__ = "user"
+    __tablename__ = "users"
 
     user_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     username = db.Column(db.String(50), nullable=False)
@@ -52,7 +52,7 @@ class Probate(db.Model):
     """Details of probate being filed"""
 
 
-    __tablename__ = "probate"
+    __tablename__ = "probates"
 
     probate_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     fullname_of_decendent = db.Column(db.String(75), nullable=False)
@@ -61,6 +61,10 @@ class Probate(db.Model):
     date_of_death = db.Column(db.String(50), nullable=False)
     court_date = db.Column(db.String(50), nullable=True)
     order_admitting_date = db.Column(db.String(50), nullable=True)
+
+
+    # timeline = db.relationship("Timeline", backref=db.backref("probate"))
+
 
 
     @staticmethod
@@ -117,6 +121,25 @@ class Probate(db.Model):
 
 
 
+# class Timeline(db.Model):
+#     """Details of lawfirm's login for probate app"""
+
+
+#     __tablename__ = "timelines"
+
+#     timeline_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+#     order_admitting_date = db.Column(db.String(50), db.ForeignKey('probates.order_admitting_date'))
+#     first_10_days = db.Column(db.String(50), nullable=True)
+#     second_10_days = db.Column(db.String(50), nullable=True)
+#     thirty_days = db.Column(db.String(50), nullable=True)
+
+#     probate = db.relationship("Probate", backref=db.backref("timelines"))
+
+#     def __repr__(self):
+#         """Provide helpful representation when printed"""
+
+
+#         return "<User timeline_id=%s first_10_days=%s second_10_days=%s  thirty_days=%s>" % (self.user_id, self.first_10_days, self.second_10_days, self.thirty_days)
 
 
 
