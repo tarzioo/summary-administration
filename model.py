@@ -2,7 +2,7 @@
 
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import joinedload
-import datetime
+from datetime import datetime
 
 # This is the connection to the PostgreSQL database; we're getting this through
 # the Flask-SQLAlchemy helper library. On this, we can find the `session`

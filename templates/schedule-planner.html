@@ -5,7 +5,7 @@
 
 <div class="schedule-planner">
     <h2>Schedule Planner</h2>
-        Today is {{ time.strftime("%A, %m/%d/%y, %I:%M:%S %p") }}
+        {{ now_central.strftime("%A, %m/%d/%y, %I:%M:%S %p") }}
 </div> 
 
 {% endblock %}

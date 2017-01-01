@@ -6,6 +6,8 @@ from urllib2 import Request, urlopen, URLError
 import requests
 from pprint import pprint
 import json
+from datetime import datetime
+from pytz import timezone
 
 from model import *
 
@@ -122,10 +124,22 @@ def probate_progress(probate_id):
 def schedule_planner():
     """Show current day to help plan possible court dates 30 and 45 days out"""
 
+    
 
-    time = datetime.datetime.utcnow()
+    # time = datetime.datetime.now()
 
-    return render_template("schedule-planner.html", time=time)
+    fmt = "%Y-%m-%d %H:%M:%S %Z%z"
+
+    # Current time in UTC
+    now_utc = datetime.now(timezone('UTC'))
+    print now_utc.strftime(fmt)
+
+    # Convert to US/central time zone
+    now_central = now_utc.astimezone(timezone('US/Central'))
+    print now_central.strftime(fmt)
+
+
+    return render_template("schedule-planner.html", now_central=now_central)
 
 
 
