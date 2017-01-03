@@ -102,9 +102,9 @@ h1 {
 }
 
 input[type='date']:after {
-  content: attr(placeholder);
-  /*left: 50%;*/
-  color: #909;;
+  /*content: attr(placeholder);
+  left: 50%;
+  color: #909;;*/
 }
 
 input[type='text']:before {
@@ -114,21 +114,21 @@ input[type='text']:before {
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #909;
+   /* color:    #909;
     text-align: right;
-    opacity: 1;
+    opacity: 1;*/
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #909;
-   opacity:  1;
+   /*color:    #909;
+   opacity:  1;*/
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #909;
-   opacity:  1;
+   /*color:    #909;
+   opacity:  1;*/
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #909;
-   opacity: 1;
+   /*color:    #909;
+   opacity: 1;*/
 }
 
 .placeholder::after
@@ -163,6 +163,11 @@ input.active:after {
 #case-add-btn {
     margin: 0 auto;
     position: relative;
+}
+
+.important {
+    color: red;
+    display: inline-block;
 }
 
 
@@ -399,10 +404,6 @@ h5 {
     color: white;
 }
 
-.important {
-    color: red;
-    display: inline-block;
-}
 
 
 
