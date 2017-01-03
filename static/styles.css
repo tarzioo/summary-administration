@@ -399,6 +399,11 @@ h5 {
     color: white;
 }
 
+.important {
+    color: red;
+    display: inline-block;
+}
+
 
 
 /******* LOGIN PAGE **********/
