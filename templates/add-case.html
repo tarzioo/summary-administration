@@ -7,12 +7,12 @@
   <h2>Add a Probate Case</h2>
   <form action='/add-probate' id="probate-add-form" method="POST">
  
-    <label>Fullname of Decendent:</label>
+    <label>Fullname of Decendent:<p class="important">*</p></label>
     <input type="text" id="fullname" class="test" placeholder="Full Name" name="fullname_of_decendent" class="mainLoginInput">
     </input>
     <div id="error-fullname"></div>
 
-    <label>Case Number:</label>
+    <label>Case Number:<p class="important">*</p></label>
     <input type="text" id="case-number" placeholder="Case Number" name="case_number">
     </input>
     <div id="error-case-number"></div>
@@ -22,7 +22,7 @@
     </input>
     <div id="error-date-filed"></div>
 
-    <label>Date of Death:</label>
+    <label>Date of Death:<p class="important">*</p></label>
     <input type="date" id="date-of-death" placeholder="Date of Death" name="date_of_death">
     </input>
     <div id="error-date-of-death"></div>
