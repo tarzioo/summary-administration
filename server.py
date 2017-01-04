@@ -50,10 +50,12 @@ def add_probate():
     Probate.add_probate(fullname_of_decendent, case_number,
         date_filed, date_of_death, court_date, order_admitting_date)
 
-    result = Probate.get_case_by_number(case_number)
+    probate = Probate.get_case_by_number(case_number)
+
+    probate_id = str(probate.probate_id)
 
 
-    return redirect('/probate-progress')
+    return redirect('/probate-progress/' + probate_id)
     
 
 @app.route("/add-case")
