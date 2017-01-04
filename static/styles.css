@@ -72,7 +72,7 @@ h1 {
     border-bottom: 1px solid #ddd;
     background: transparent;
     margin-bottom: 10px;
-    font: 16px Arial, Helvetica, sans-serif;
+    font: 25px Arial, Helvetica, sans-serif;
     height: 45px;
 }
 
@@ -101,6 +101,16 @@ h1 {
 
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #34CACA;
+    font-size: 40px;
+    padding-right: 80%;
+}
+::-webkit-inner-spin-button { 
+    display: none; 
+}
+   
+
 input[type='date']:after {
   /*content: attr(placeholder);
   left: 50%;
@@ -114,9 +124,9 @@ input[type='text']:before {
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-   /* color:    #909;
-    text-align: right;
-    opacity: 1;*/
+    color: white;
+    /*text-align: right;*/
+    opacity: 1;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    /*color:    #909;
