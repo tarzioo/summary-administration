@@ -144,6 +144,25 @@ def schedule_planner():
     return render_template("schedule-planner.html", now_central=now_central)
 
 
+def next_aval_date():
+    """returns the first available date for user
+        >>> type(next_aval_date())
+        <type 'tuple'>
+    """
+    time_now= datetime.now()
+    td= timedelta(1)
+
+    first_available_day = time_now + td 
+    weekdays= ['Monday', 'Tuesday', 'Wednesday', 'Thursday']
+    for day in weekdays:
+        if day in weekdays:
+            first_available_day= time_now +td
+        else: 
+            first_available_day= time_now +timedelta(3)
+    return (first_available_day.day, first_available_day.month, first_available_day.year)
+
+
+
 
 
 
