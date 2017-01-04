@@ -25,6 +25,7 @@ margin: 0 auto;
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+overflow: scroll;
 }
 .probate-form h2{
 background: #4D4D4D;
@@ -171,6 +172,7 @@ margin: 0 auto;
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+overflow: scroll;
 }
 .probate-progress-outer h2{
 background: #4D4D4D;
@@ -319,6 +321,7 @@ margin: 0 auto;
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+overflow: scroll;
 }
 .schedule-planner h2{
 background: #4D4D4D;
@@ -373,6 +376,7 @@ margin: 0 auto;
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+overflow: scroll;
 }
 .calendar-outer h2{
 background: #4D4D4D;
