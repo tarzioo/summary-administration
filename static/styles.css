@@ -508,6 +508,29 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
     text-align: center;
 }
 
+.current-time {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.schedule-container {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.thirty-days-ahead {
+    float: left;
+}
+
+.fourtyfive-days-ahead {
+    float: right;
+}
+
+.schedule-ahead {
+    display: inline-block;
+}
+
 
 
 
