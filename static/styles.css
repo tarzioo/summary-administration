@@ -362,6 +362,13 @@ color: black;
 font-size: 30px;
 font-weight: bold;
 }
+
+.schedule-ahead p {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
+}
 /************ CALENDAR ***********/
 
 .calendar-outer {
