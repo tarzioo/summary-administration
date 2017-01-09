@@ -163,6 +163,16 @@ def next_aval_date():
 
 
 
+def next_30_days():
+    """Looks ahead 30 days from current time and shows next 30 days"""
+
+
+    time_utc = datetime.now(timezone('UTC'))
+
+    time_central = time_utc.astimezone(timezone('US/Central'))
+    
+    weekend = ["Saturday", "Sunday"]
+    
 
 
 
