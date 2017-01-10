@@ -1,4 +1,9 @@
 
+
+
+
+
+
 function caseSearch(evt) {
     alert("Entered function");
     evt.preventDefault();
@@ -518,6 +523,10 @@ CalendarApp.prototype.showNewMonth = function(e){
 
 var calendar = new CalendarApp();
 console.log(calendar);
+
+
+
+
 
 
 

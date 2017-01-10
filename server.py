@@ -170,11 +170,16 @@ def next_30_days():
     time_utc = datetime.now(timezone('UTC'))
 
     time_central = time_utc.astimezone(timezone('US/Central'))
-    
+
     weekend = ["Saturday", "Sunday"]
-    
 
 
+def get_holidays():
+
+    with open('seed_data/holidays.json','r') as f:
+        holidays = json.load(f)
+
+        pprint(holidays)
 
 
 
